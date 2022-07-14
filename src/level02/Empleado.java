@@ -1,66 +1,32 @@
 package level02;
 
+
 public class Empleado {
 	private String nomApe;
-	private Integer dni;
-	private int horasLabor;
+	private int dni;
+	private int horasTrabajadas;
 	private int valorHora;
 	
-	public Empleado(String nomApe, Integer dni, int horasLabor, int valorHora){
+	public Empleado(String nomApe, int dni, int horasTrabajadas, int valorHora){
 		this.nomApe = nomApe;
 		this.dni = dni;
-		this.horasLabor = horasLabor;
+		this.horasTrabajadas = horasTrabajadas;
 		this.valorHora = valorHora;
-	}
-
-	public String getNomApe() {
-		return nomApe;
-	}
-
-	public void setNomApe(String nomApe) {
-		this.nomApe = nomApe;
-	}
-
-	public Integer getDni() {
-		return dni;
-	}
-
-	public void setDni(int dni) {
-		this.dni = dni;
-	}
-
-	public int getHorasLabor() {
-		return horasLabor;
-	}
-
-	public void setHorasLabor(int horasLabor) {
-		this.horasLabor = horasLabor;
-	}
-
-	public int getValorHora() {
-		return valorHora;
-	}
-
-	public void setValorHora(int valorHora) {
-		this.valorHora = valorHora;
-	}
-	@Override
-	public String toString(){
-		return "nombre: "+nomApe+"DNI:"+dni;
-	}
-
-	@Override
-	public boolean equals(Object objeto) {
-		if(objeto == null)return false;
-		Empleado producto = (Empleado)objeto;
-		if(this.getDni().equals(producto.getDni()))
-			return true;
-		return false;
-	}
-
-	@Override
-	public int hashCode() {
-		return this.getDni().hashCode();
 	}
 	
+	public String getNomApe(){
+		return nomApe;
+	}
+	
+	public int getDni(){
+		return dni;
+	}
+	
+	public int getHorasTrabajadas(){
+		return horasTrabajadas;
+	}
+	
+	public int getValorHora(){
+		return valorHora;
+	}
 }
