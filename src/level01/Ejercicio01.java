@@ -9,8 +9,9 @@ public class Ejercicio01 {
 		//solicitamos el nombre al usuario
 		System.out.println("Ingrese su nombre por favor:");
 		String nombre = scan.nextLine();
+		scan.close();
 		//y lo imprimimos con el saludo
-		System.out.println("Hola "+ nombre+"!!!");
+		System.out.println("HOLA "+ nombre+"!!!");
 	}
 
 }
